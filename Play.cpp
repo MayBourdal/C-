@@ -97,9 +97,10 @@ void introduccion(bool noSigue)
         cout << "Como estas??" << endl;
         cout << "Te gustaria elegir tu mascota?" << endl;
     }
-    else
+    else if (noSigue == true)
     {
         cout << "Quieres seleccionar otra mascota??" << endl;
+        reset();
     }
     cout << "Selecciona:" << endl;
     cout << "1- Si tu respuesta es SI" << endl;
@@ -121,7 +122,7 @@ void introduccion(bool noSigue)
         cout << "Me encata charlar a mi tambien" << endl;
         cout << "Cuentame sobre que te gustaria conversar" << endl;
         cin >> talk;
-        }
+    }
     else
     {
         cout << "Tu respuesta no es valida" << endl;

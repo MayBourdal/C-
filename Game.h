@@ -12,5 +12,6 @@ void Living(string name, string object);
 void Garage(string name, string object);
 int Opciones(string name, string object);
 void game(string name, string object);
+void reset();
 
 #endif

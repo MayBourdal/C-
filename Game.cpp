@@ -30,6 +30,14 @@ void continuar(string name, string object)
         introduccion(noSigue);
     }
 }
+void reset()
+{
+    for (int i = 0; i < opcionesSeleccionadas.size(); ++i)
+    {
+        opcionesSeleccionadas[i] = false;
+    }
+}
+
 int Opciones(string name, string object)
 {
     (opcionesSeleccionadas[1] == false) ? cout << "1: Mi Habitacion " << endl : cout << "1: Mi Habitacion/No disponible" << endl;
@@ -103,6 +111,7 @@ void Habitacion(string name, string object)
                 cout << "Has ganado la partida!!" << endl;
                 cout << "Feliiiciitacioooneess eres brillantee has conseguido que mi pancita quede satisfecha" << endl;
                 cout << "*********************************" << endl;
+                reset();
                 introduccion(true);
             }
             else if (contador == 6 && cantidad > 6)
@@ -110,6 +119,7 @@ void Habitacion(string name, string object)
                 cout << "*********************************" << endl;
                 cout << "Lo siento la patida a terminado y no has encontrado la suficiente comidita =(" << endl;
                 cout << "Pero ey este no es el final puedes volver a intentarlo las veces que quieras" << endl;
+                reset();
                 introduccion(true);
             }
             else
@@ -159,6 +169,7 @@ void Habitacion(string name, string object)
                 cout << "Has ganado la partida!!" << endl;
                 cout << "Feliiiciitacioooneess eres brillantee has conseguido encontrar mi ración diaria de birrita" << endl;
                 cout << "*********************************" << endl;
+                reset();
                 introduccion(true);
             }
             else if (contador == 6 && cantidad > 6)
@@ -166,6 +177,7 @@ void Habitacion(string name, string object)
                 cout << "*********************************" << endl;
                 cout << "Lo siento la patida a terminado y no has encontrado la suficiente comidita =(" << endl;
                 cout << "Pero ey este no es el final puedes volver a intentarlo las veces que quieras" << endl;
+                reset();
                 introduccion(true);
             }
             else
@@ -220,6 +232,7 @@ void Habitacion(string name, string object)
                 cout << "Has ganado la partida!!" << endl;
                 cout << "Feliiiciitacioooneess eres brillantee has conseguido encontrar todos mis huesitos" << endl;
                 cout << "*********************************" << endl;
+                reset();
                 introduccion(true);
             }
             else if (contador == 6 && cantidad > 6)
@@ -227,6 +240,7 @@ void Habitacion(string name, string object)
                 cout << "*********************************" << endl;
                 cout << "Lo siento la patida a terminado y no has encontrado la suficiente comidita =(" << endl;
                 cout << "Pero ey este no es el final puedes volver a intentarlo las veces que quieras" << endl;
+                reset();
                 introduccion(true);
             }
             else
@@ -318,6 +332,7 @@ void Cocina(string name, string object)
                 cout << "Feliiiciitacioooneess eres brillantee has conseguido encontrar mi ración diaria de birrita" << endl;
                 cout << "*********************************" << endl;
                 cout << endl;
+                reset();
                 introduccion(true);
             }
             else if (contador == 6 && cantidad > 6)
@@ -326,6 +341,7 @@ void Cocina(string name, string object)
                 cout << "*********************************" << endl;
                 cout << "Lo siento la patida a terminado y no has encontrado la suficiente comidita =(" << endl;
                 cout << "Pero ey este no es el final puedes volver a intentarlo las veces que quieras" << endl;
+                reset();
                 introduccion(true);
             }
             else
@@ -357,6 +373,7 @@ void Cocina(string name, string object)
                 cout << "Has ganado la partida!!" << endl;
                 cout << "Feliiiciitacioooneess eres brillantee has conseguido que mi pancita quede satisfecha" << endl;
                 cout << "*********************************" << endl;
+                reset();
                 introduccion(true);
             }
             else if (contador == 6 && cantidad > 6)
@@ -364,6 +381,7 @@ void Cocina(string name, string object)
                 cout << "*********************************" << endl;
                 cout << "Lo siento la patida a terminado y no has encontrado la suficiente comidita =(" << endl;
                 cout << "Pero ey este no es el final puedes volver a intentarlo las veces que quieras" << endl;
+                reset();
                 introduccion(true);
             }
             else
@@ -396,6 +414,7 @@ void Cocina(string name, string object)
                 cout << "Has ganado la partida!!" << endl;
                 cout << "Feliiiciitacioooneess eres brillantee has conseguido encontrar todos mis huesitos" << endl;
                 cout << "*********************************" << endl;
+                reset();
                 introduccion(true);
             }
             else if (contador == 6 && cantidad > 6)
@@ -403,6 +422,7 @@ void Cocina(string name, string object)
                 cout << "*********************************" << endl;
                 cout << "Lo siento la patida a terminado y no has encontrado la suficiente comidita =(" << endl;
                 cout << "Pero ey este no es el final puedes volver a intentarlo las veces que quieras" << endl;
+                reset();
                 introduccion(true);
             }
             else
@@ -507,6 +527,7 @@ void Parque(string name, string object)
                 cout << "Has ganado la partida!!" << endl;
                 cout << "Feliiiciitacioooneess eres brillantee has conseguido encontrar todos mis huesitos" << endl;
                 cout << "*********************************" << endl;
+                reset();
                 introduccion(true);
             }
             else if (contador == 6 && cantidad > 6)
@@ -514,6 +535,7 @@ void Parque(string name, string object)
                 cout << "*********************************" << endl;
                 cout << "Lo siento la patida a terminado y no has encontrado la suficiente comidita =(" << endl;
                 cout << "Pero ey este no es el final puedes volver a intentarlo las veces que quieras" << endl;
+                reset();
                 introduccion(true);
             }
             else
@@ -571,6 +593,7 @@ void Parque(string name, string object)
                 cout << "Has ganado la partida!!" << endl;
                 cout << "Feliiiciitacioooneess eres brillantee has conseguido encontrar mi ración diaria de birrita" << endl;
                 cout << "*********************************" << endl;
+                reset();
                 introduccion(true);
             }
             else if (contador == 6 && cantidad > 6)
@@ -578,6 +601,7 @@ void Parque(string name, string object)
                 cout << "*********************************" << endl;
                 cout << "Lo siento la patida a terminado y no has encontrado la suficiente comidita =(" << endl;
                 cout << "Pero ey este no es el final puedes volver a intentarlo las veces que quieras" << endl;
+                reset();
                 introduccion(true);
             }
             else
@@ -612,6 +636,7 @@ void Parque(string name, string object)
                 cout << "Has ganado la partida!!" << endl;
                 cout << "Feliiiciitacioooneess eres brillantee has conseguido que mi pancita quede satisfecha" << endl;
                 cout << "*********************************" << endl;
+                reset();
                 introduccion(true);
             }
             else if (contador == 6 && cantidad > 6)
@@ -619,6 +644,7 @@ void Parque(string name, string object)
                 cout << "*********************************" << endl;
                 cout << "Lo siento la patida a terminado y no has encontrado la suficiente comidita =(" << endl;
                 cout << "Pero ey este no es el final puedes volver a intentarlo las veces que quieras" << endl;
+                reset();
                 introduccion(true);
             }
             else
@@ -694,6 +720,7 @@ void Toilete(string name, string object)
                 cout << "Has ganado la partida!!" << endl;
                 cout << "Feliiiciitacioooneess eres brillantee has conseguido encontrar todos mis huesitos" << endl;
                 cout << "*********************************" << endl;
+                reset();
                 introduccion(true);
             }
             else if (contador == 6 && cantidad > 6)
@@ -701,6 +728,7 @@ void Toilete(string name, string object)
                 cout << "*********************************" << endl;
                 cout << "Lo siento la patida a terminado y no has encontrado la suficiente comidita =(" << endl;
                 cout << "Pero ey este no es el final puedes volver a intentarlo las veces que quieras" << endl;
+                reset();
                 introduccion(true);
             }
             else
@@ -749,6 +777,7 @@ void Toilete(string name, string object)
                 cout << "Has ganado la partida!!" << endl;
                 cout << "Feliiiciitacioooneess eres brillantee has conseguido encontrar mi ración diaria de birrita" << endl;
                 cout << "*********************************" << endl;
+                reset();
                 introduccion(true);
             }
             else if (contador == 6 && cantidad > 6)
@@ -756,6 +785,7 @@ void Toilete(string name, string object)
                 cout << "*********************************" << endl;
                 cout << "Lo siento la patida a terminado y no has encontrado la suficiente comidita =(" << endl;
                 cout << "Pero ey este no es el final puedes volver a intentarlo las veces que quieras" << endl;
+                reset();
                 introduccion(true);
             }
             else
@@ -785,6 +815,7 @@ void Toilete(string name, string object)
                 cout << "Has ganado la partida!!" << endl;
                 cout << "Feliiiciitacioooneess eres brillantee has conseguido que mi pancita quede satisfecha" << endl;
                 cout << "*********************************" << endl;
+                reset();
                 introduccion(true);
             }
             else if (contador == 6 && cantidad > 6)
@@ -792,6 +823,7 @@ void Toilete(string name, string object)
                 cout << "*********************************" << endl;
                 cout << "Lo siento la patida a terminado y no has encontrado la suficiente comidita =(" << endl;
                 cout << "Pero ey este no es el final puedes volver a intentarlo las veces que quieras" << endl;
+                reset();
                 introduccion(true);
             }
             else
@@ -857,6 +889,7 @@ void Living(string name, string object)
                 cout << "Has ganado la partida!!" << endl;
                 cout << "Feliiiciitacioooneess eres brillantee has conseguido que mi pancita quede satisfecha" << endl;
                 cout << "*********************************" << endl;
+                reset();
                 introduccion(true);
             }
             else if (contador == 6 && cantidad > 6)
@@ -864,6 +897,7 @@ void Living(string name, string object)
                 cout << "*********************************" << endl;
                 cout << "Lo siento la patida a terminado y no has encontrado la suficiente comidita =(" << endl;
                 cout << "Pero ey este no es el final puedes volver a intentarlo las veces que quieras" << endl;
+                reset();
                 introduccion(true);
             }
             else
@@ -894,6 +928,7 @@ void Living(string name, string object)
                 cout << "Has ganado la partida!!" << endl;
                 cout << "Feliiiciitacioooneess eres brillantee has conseguido encontrar todos mis huesitos" << endl;
                 cout << "*********************************" << endl;
+                reset();
                 introduccion(true);
             }
             else if (contador == 6 && cantidad > 6)
@@ -901,6 +936,7 @@ void Living(string name, string object)
                 cout << "*********************************" << endl;
                 cout << "Lo siento la patida a terminado y no has encontrado la suficiente comidita =(" << endl;
                 cout << "Pero ey este no es el final puedes volver a intentarlo las veces que quieras" << endl;
+                reset();
                 introduccion(true);
             }
             else
@@ -948,6 +984,7 @@ void Living(string name, string object)
                 cout << "Has ganado la partida!!" << endl;
                 cout << "Feliiiciitacioooneess eres brillantee has conseguido encontrar mi ración diaria de birrita" << endl;
                 cout << "*********************************" << endl;
+                reset();
                 introduccion(true);
             }
             else if (contador == 6 && cantidad > 6)
@@ -955,6 +992,7 @@ void Living(string name, string object)
                 cout << "*********************************" << endl;
                 cout << "Lo siento la patida a terminado y no has encontrado la suficiente comidita =(" << endl;
                 cout << "Pero ey este no es el final puedes volver a intentarlo las veces que quieras" << endl;
+                reset();
                 introduccion(true);
             }
             else
@@ -1028,6 +1066,7 @@ void Garage(string name, string object)
                 cout << "Has ganado la partida!!" << endl;
                 cout << "Feliiiciitacioooneess eres brillantee has conseguido encontrar todos mis huesitos" << endl;
                 cout << "*********************************" << endl;
+                reset();
                 introduccion(true);
             }
             else if (contador == 6 && cantidad > 6)
@@ -1035,6 +1074,7 @@ void Garage(string name, string object)
                 cout << "*********************************" << endl;
                 cout << "Lo siento la patida a terminado y no has encontrado la suficiente comidita =(" << endl;
                 cout << "Pero ey este no es el final puedes volver a intentarlo las veces que quieras" << endl;
+                reset();
                 introduccion(true);
             }
             else
@@ -1058,6 +1098,7 @@ void Garage(string name, string object)
                 cout << "Has ganado la partida!!" << endl;
                 cout << "Feliiiciitacioooneess eres brillantee has conseguido que mi pancita quede satisfecha" << endl;
                 cout << "*********************************" << endl;
+                reset();
                 introduccion(true);
             }
             else if (contador == 6 && cantidad > 6)
@@ -1065,6 +1106,7 @@ void Garage(string name, string object)
                 cout << "*********************************" << endl;
                 cout << "Lo siento la patida a terminado y no has encontrado la suficiente comidita =(" << endl;
                 cout << "Pero ey este no es el final puedes volver a intentarlo las veces que quieras" << endl;
+                reset();
                 introduccion(true);
             }
             else
@@ -1147,6 +1189,7 @@ void Garage(string name, string object)
                 cout << "Has ganado la partida!!" << endl;
                 cout << "Feliiiciitacioooneess eres brillantee has conseguido encontrar mi ración diaria de birrita" << endl;
                 cout << "*********************************" << endl;
+                reset();
                 introduccion(true);
             }
             else if (contador == 6 && cantidad > 6)
@@ -1154,6 +1197,7 @@ void Garage(string name, string object)
                 cout << "*********************************" << endl;
                 cout << "Lo siento la patida a terminado y no has encontrado la suficiente comidita =(" << endl;
                 cout << "Pero ey este no es el final puedes volver a intentarlo las veces que quieras" << endl;
+                reset();
                 introduccion(true);
             }
             else
